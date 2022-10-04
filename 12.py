@@ -1,26 +1,24 @@
-q1 = int (input('Введите число 1: '))
-q2 = int (input('Введите число 2: '))
+class Main(Frame):
+    def __init__(self, root):
+        super(Main, self).__init__(root)
+        self.build()
 
-v = int (input('Какую операцию вы хотите выполнить? \n 1 Сложение \n 2 Вычитание \n 3 Деление \n 4 Умножение \n 5 квадрат \n'))
+    def build(self):
+        pass
+ 
+    def logicalc(self, operation):
+        pass
 
-if v == 1:
-    r = q1 + q2
-    p = 'сложения'
-    t = p
-if v == 2:
-    r = q1 - q2
-    l = 'вычитания'
-    t = l
-if v == 3:
-    r = float(q1 / q2)
-    m = 'деления'
-    t = m
-if v == 4:
-    r = q1 * q2
-    n = 'умножения'
-    t = n
-if v == 5
-    r = q1 * q1
-    n = 'квадрат'
-    t = n
-print ('Результат ',t,' = ',r)
+    def update():
+       pass
+
+
+if __name__ == '__main__':
+    root = Tk()
+    root["bg"] = "#000"
+    root.geometry("485x550+200+200")
+    root.title("Калькулятор")
+    root.resizable(False, False)
+    app = Main(root)
+    app.pack()
+    root.mainloop()
